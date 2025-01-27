@@ -1,0 +1,195 @@
+/* text typing animation */
+/* #text-container {
+    display: inline-block;
+} */
+
+#text1 {
+  color: black;
+  letter-spacing: 10px;
+  border-right: 5px solid red;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(21), cursor 0.4s step-end infinite alternate;
+}
+#fletter {
+  color: red;
+}
+#text2 {
+  color: blue;
+  letter-spacing: 5px;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+body {
+  margin: 0px;
+}
+
+/* navigation */
+#navigation {
+  display: flex;
+  position: sticky;
+  /*width : 100%;*/
+  height: 50px;
+  top: 0px;
+  padding: 5px 0px;
+  justify-content: space-around;
+  background-color: lightgray;
+  border-bottom: 2px solid gray;
+  font-size: 20px;
+  align-items: center;
+}
+#navigation a {
+  text-decoration: none;
+  color: black;
+}
+#navigation a:hover {
+  color: white;
+}
+#rnav {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+#lnav {
+  margin: 0 10px;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+}
+
+/* main container */
+#main {
+  padding: 100px 0px;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  display: flex;
+  height: 350px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* sponsores */
+#sponsore,
+#organizer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#venue,
+#follow {
+  text-align: center;
+}
+
+/*form*/
+#form,
+#rbook {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  margin-top: 10px;
+}
+
+/*schedule table*/
+#stable {
+  border: 2px solid grey;
+}
+
+/*images memories*/
+#slideshow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 600px;
+  background-image: url(./images/logo.jpg);
+  background-size: cover;
+  animation: slide infinite;
+  animation-duration: 10s;
+}
+
+#slideshow {
+  width: 50%;
+  height: 600px;
+  background-size: cover;
+  animation: slide 25s infinite; /* Adjust duration as needed */
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(./images/img1_SD.jpg);
+    background-size: cover;
+  }
+  6.67% {
+    background-image: url(./images/img2_SD.jpg);
+    background-size: cover;
+  }
+  13.33% {
+    background-image: url(./images/img3_SD.jpg);
+    background-size: cover;
+  }
+  20% {
+    background-image: url(./images/img4_SD.jpg);
+    background-size: cover;
+  }
+  26.67% {
+    background-image: url(./images/img5_SD.jpg);
+    background-size: cover;
+  }
+  33.33% {
+    background-image: url(./images/img6_SD.jpg);
+    background-size: cover;
+  }
+  40% {
+    background-image: url(./images/contact_SD.png);
+    background-size: cover;
+  }
+  46.67% {
+    background-image: url(./images/loc_dakor.jpg);
+    background-size: cover;
+  }
+  53.33% {
+    background-image: url(./images/Keshav\ Villa\ _\ Brochure_page-0001.jpg);
+    background-size: cover;
+  }
+  60% {
+    background-image: url(./images/Keshav\ Villa\ _\ Brochure_page-0002.jpg);
+    background-size: cover;
+  }
+  66.67% {
+    background-image: url(./images/Keshav\ Villa\ _\ Brochure_page-0003.jpg);
+    background-size: cover;
+  }
+  73.33% {
+    background-image: url(./images/Keshav\ Villa\ _\ Brochure_page-0004.jpg);
+    background-size: cover;
+  }
+  80% {
+    background-image: url(./images/Keshav\ Villa\ _\ Brochure_page-0005.jpg);
+    background-size: cover;
+  }
+  86.67% {
+    background-image: url(./images/Keshav\ Villa\ _\ Brochure_page-0006.jpg);
+    background-size: cover;
+  }
+  93.33% {
+    background-image: url(./images/Keshav\ Villa\ _\ Brochure_page-0007.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(./images/Keshav\ Villa\ _\ Brochure_page-0008.jpg);
+    background-size: cover;
+  } /* Loop back */
+}
